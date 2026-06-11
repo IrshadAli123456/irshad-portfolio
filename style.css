@@ -101,6 +101,10 @@ display:flex;
 justify-content:flex-end;
 }
 
+.hero-text{
+transform:translateX(40px);
+}
+
 /* Responsive Design */
 
 @media (max-width: 768px) {
@@ -1148,70 +1152,39 @@ display:none;
 }
 
 .hero{
-grid-template-columns:1fr;
-padding-top:120px;
-gap:20px;
-text-align:center;
-}
-
-.hero-image{
-transform:none;
-justify-content:center;
-}
-
-.hero-text{
-transform:none;
+padding-top:150px;
 }
 
 .hero-text h1{
-font-size:3rem;
-line-height:1.1;
+font-size:7rem;
+line-height:0.9;
 }
 
 .hero-text h2{
-font-size:1.4rem;
+font-size:1.8rem;
 }
 
 .hero-text p{
 font-size:1rem;
-line-height:1.7;
-padding:0 10px;
+line-height:1.9;
 }
 
 .hero-image img{
-width:90%;
-max-width:300px;
-transform:none;
-animation:none;
-margin:0 auto;
-display:block;
-}
 
-.hero-buttons{
-justify-content:center;
-}
+width:100%;
+max-width:520px;
 
-.social-icons{
-justify-content:center;
+transform:scale(1.08);
+
+margin-right:0;
+margin-bottom:0;
 }
 
 .section-title h2{
-font-size:2.5rem;
-}
-
-.channel-top h2{
-font-size:2rem;
-}
-
-.channel-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.project-buttons{
-flex-direction:column;
-}
-
+font-size:5rem;
+font-weight:800;
+color:#ff9900;
+text-align:center;
 }
 
 .thumb-title{
