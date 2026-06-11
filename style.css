@@ -1152,12 +1152,12 @@ display:none;
 }
 
 .hero{
-padding-top:150px;
+padding-top:120px;
 }
 
 .hero-text h1{
-font-size:7rem;
-line-height:0.9;
+font-size:3rem;
+line-height:1.1;
 }
 
 .hero-text h2{
@@ -1170,14 +1170,11 @@ line-height:1.9;
 }
 
 .hero-image img{
-
-width:100%;
-max-width:520px;
-
-transform:scale(1.08);
-
-margin-right:0;
-margin-bottom:0;
+width:90%;
+max-width:300px;
+transform:none;
+margin:0 auto;
+display:block;
 }
 
 .section-title h2{
