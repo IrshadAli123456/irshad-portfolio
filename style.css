@@ -84,35 +84,21 @@ color:#ff9900;
 /* HERO SECTION */
 
 .hero{
-min-height:100vh;
+min-height:auto;
 display:grid;
 grid-template-columns:55% 45%;
 align-items:center;
 padding:120px 6%;
-gap:60px;
-width:100%;
-max-width:100%;
-margin:0 auto;
+gap:30px;
 }
 
 .hero-image{
-transform:translateX(-300px);
 display:flex;
-justify-content:flex-end;
+justify-content:center;
 }
 
 .hero-text{
-transform:translateX(40px);
-}
-
-/* Responsive Design */
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 100px 5%;
-    }
+text-align:left;
 }
 
 /* HERO TEXT */
@@ -276,15 +262,15 @@ animation:floatImage 4s ease-in-out infinite;
 @keyframes floatImage{
 
 0%{
-transform:translateY(0px) scale(1.45);
+transform:translateY(0px) scale(1);
 }
 
 50%{
-transform:translateY(-18px) scale(1.45);
+transform:translateY(-10px) scale(1);
 }
 
 100%{
-transform:translateY(0px) scale(1.45);
+transform:translateY(0px) scale(1);
 }
 
 }
@@ -348,8 +334,8 @@ color:#ccc;
 display:flex;
 justify-content:center;
 gap:20px;
-margin-top:40px;
 flex-wrap:wrap;
+flex-direction:row;
 }
 
 .channel-btn{
@@ -594,7 +580,6 @@ autoScroll 25s linear infinite;
 animation-play-state:paused;
 }
 
-CSS Add
 @keyframes autoScroll{
 
 0%{
@@ -1152,12 +1137,31 @@ display:none;
 }
 
 .hero{
+display:flex;
+flex-direction:column-reverse;
+align-items:center;
 padding-top:120px;
+gap:15px;
+text-align:center;
 }
 
 .hero-text h1{
 font-size:3rem;
 line-height:1.1;
+}
+
+.hero-text{
+transform:none;
+width:100%;
+text-align:center;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.social-icons{
+justify-content:center;
 }
 
 .hero-text h2{
@@ -1169,23 +1173,31 @@ font-size:1rem;
 line-height:1.9;
 }
 
-.hero-image img{
-width:90%;
-max-width:300px;
+.hero-image{
+width:100%;
+display:flex;
+justify-content:center;
 transform:none;
+}
+
+.hero-image img{
+width:85%;
+max-width:280px;
 margin:0 auto;
 display:block;
+transform:none;
+animation:none;
 }
 
 .section-title h2{
-font-size:5rem;
+font-size:2rem;
 font-weight:800;
 color:#ff9900;
 text-align:center;
 }
 
 .thumb-title{
-font-size:4.5rem;
+font-size:2rem;
 font-weight:800;
 color:#ff9900;
 text-align:center;
@@ -1201,13 +1213,57 @@ font-size:2.4rem;
 font-size:2.4rem;
 }
 
-.channel-buttons{
+.skills-grid,
+.project-grid,
+.services-grid,
+.certificate-grid,
+.contact-container,
+.thankyou-content{
+display:grid;
+grid-template-columns:1fr;
+}
+
+.project-card,
+.skill-card,
+.service-card,
+.certificate-card{
+width:100%;
+}
+
+.contact-buttons{
+flex-direction:column;
+}
+
+.available-grid{
+grid-template-columns:1fr;
+}
+
+.contact-left h3{
+font-size:2rem;
+}
+
+.thankyou-text h2{
+font-size:2rem;
+}
+
+.thankyou-image img{
+width:100%;
+max-width:280px;
+}
+
+.logo{
+font-size:28px;
+}
+
+.channel-buttons,
+.project-buttons{
 flex-direction:column;
 align-items:center;
 }
 
-.project-buttons{
-flex-direction:column;
+.video-card{
+min-width:250px;
+height:150px;
 }
 
 }
