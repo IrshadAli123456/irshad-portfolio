@@ -580,6 +580,7 @@ autoScroll 25s linear infinite;
 animation-play-state:paused;
 }
 
+CSS Add
 @keyframes autoScroll{
 
 0%{
@@ -1190,14 +1191,14 @@ animation:none;
 }
 
 .section-title h2{
-font-size:2rem;
+font-size:5rem;
 font-weight:800;
 color:#ff9900;
 text-align:center;
 }
 
 .thumb-title{
-font-size:2rem;
+font-size:4.5rem;
 font-weight:800;
 color:#ff9900;
 text-align:center;
@@ -1211,59 +1212,6 @@ font-size:2.4rem;
 
 .channel-top h2{
 font-size:2.4rem;
-}
-
-.skills-grid,
-.project-grid,
-.services-grid,
-.certificate-grid,
-.contact-container,
-.thankyou-content{
-display:grid;
-grid-template-columns:1fr;
-}
-
-.project-card,
-.skill-card,
-.service-card,
-.certificate-card{
-width:100%;
-}
-
-.contact-buttons{
-flex-direction:column;
-}
-
-.available-grid{
-grid-template-columns:1fr;
-}
-
-.contact-left h3{
-font-size:2rem;
-}
-
-.thankyou-text h2{
-font-size:2rem;
-}
-
-.thankyou-image img{
-width:100%;
-max-width:280px;
-}
-
-.logo{
-font-size:28px;
-}
-
-.channel-buttons,
-.project-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.video-card{
-min-width:250px;
-height:150px;
 }
 
 }
