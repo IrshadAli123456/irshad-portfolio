@@ -70,7 +70,9 @@ typeEffect();
 function closeAllPlaylists(){
 
 const allBoxes =
-document.querySelectorAll(".playlist-box");
+document.querySelectorAll(
+".playlist-box, .mobile-playlist"
+);
 
 allBoxes.forEach((box)=>{
 
@@ -103,7 +105,7 @@ box.style.display = "block";
 
 box.scrollIntoView({
 behavior:"smooth",
-block:"center"
+block:"start"
 });
 
 }
@@ -133,7 +135,7 @@ box.style.display = "block";
 
 box.scrollIntoView({
 behavior:"smooth",
-block:"center"
+block:"start"
 });
 
 }
@@ -147,7 +149,9 @@ block:"center"
 function toggleIAS(){
 
 const box =
-document.getElementById("iasBox");
+window.innerWidth <= 768
+? document.getElementById("mobileIasBox")
+: document.getElementById("iasBox");
 
 if(!box) return;
 
@@ -163,7 +167,7 @@ box.style.display = "block";
 
 box.scrollIntoView({
 behavior:"smooth",
-block:"center"
+block:"start"
 });
 
 }
@@ -177,7 +181,9 @@ block:"center"
 function toggleMaa(){
 
 const box =
-document.getElementById("maaBox");
+window.innerWidth <= 768
+? document.getElementById("mobileMaaBox")
+: document.getElementById("maaBox");
 
 if(!box) return;
 
@@ -193,7 +199,7 @@ box.style.display = "block";
 
 box.scrollIntoView({
 behavior:"smooth",
-block:"center"
+block:"start"
 });
 
 }
@@ -207,7 +213,9 @@ block:"center"
 function toggleCrypto(){
 
 const box =
-document.getElementById("cryptoBox");
+window.innerWidth <= 768
+? document.getElementById("mobileCryptoBox")
+: document.getElementById("cryptoBox");
 
 if(!box) return;
 
@@ -223,7 +231,7 @@ box.style.display = "block";
 
 box.scrollIntoView({
 behavior:"smooth",
-block:"center"
+block:"start"
 });
 
 }
@@ -237,7 +245,9 @@ block:"center"
 function toggleFreelance(){
 
 const box =
-document.getElementById("freelanceBox");
+window.innerWidth <= 768
+? document.getElementById("mobileFreelanceBox")
+: document.getElementById("freelanceBox");
 
 if(!box) return;
 
@@ -253,7 +263,7 @@ box.style.display = "block";
 
 box.scrollIntoView({
 behavior:"smooth",
-block:"center"
+block:"start"
 });
 
 }
